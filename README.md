@@ -4,11 +4,6 @@ Aplicação multiusuário para diagnosticar como uma empresa está lidando
 com IA hoje. Cada funcionário responde um questionário e a empresa
 recebe uma pontuação de maturidade (0-100), individual e agregada.
 
-Evoluiu de dois protótipos HTML estáticos (sem banco de dados, sem
-multiusuário) para uma aplicação real: login, banco de dados,
-isolamento por empresa e dashboard agregado — dockerizada, pronta para
-rodar em qualquer nuvem.
-
 Desenvolvida com **Spec Driven Development**: toda regra de negócio
 está documentada em [`specs/`](./specs) (requisitos + cenários Gherkin)
 antes de existir em código, cada uma com teste automatizado. Hoje: 30
@@ -73,7 +68,7 @@ Pré-requisito: [Docker Desktop](https://www.docker.com/products/docker-desktop/
 ```bash
 git clone <url-do-seu-repositório>
 cd assessment-app
-cp .env.example .env   # edite ao menos o JWT_SECRET
+cp .env.example .env   
 docker compose up --build
 ```
 
