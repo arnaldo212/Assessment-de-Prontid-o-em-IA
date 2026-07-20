@@ -80,7 +80,7 @@ Popule os dados de exemplo:
 docker compose exec backend python -m app.seed
 ```
 
-Resetar tudo (apaga o banco também): `docker compose down -v`
+Resetar tudo: `docker compose down -v`
 
 ## Arquitetura
 
