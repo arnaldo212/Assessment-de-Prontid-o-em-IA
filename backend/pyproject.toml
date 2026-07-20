@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "assessment-backend"
+version = "0.1.0"
+description = "API multiusuário de assessment de prontidão em IA"
+authors = ["Arnaldo"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+sqlalchemy = "^2.0.35"
+psycopg = {extras = ["binary"], version = "^3.2.3"}
+alembic = "^1.13.3"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.5.2"
+pyjwt = "^2.9.0"
+bcrypt = "^4.2.0"
+email-validator = "^2.2.0"
+python-multipart = "^0.0.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-bdd = "^7.3.0"
+httpx = "^0.27.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
